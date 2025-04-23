@@ -13,4 +13,13 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: '../server/client/dist', 
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: './index.html',
+    },
+    emptyOutDir: true, 
+},
+  
 });
