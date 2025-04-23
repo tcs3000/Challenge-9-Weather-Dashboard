@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'client', 'dist', 'index.html'));
   });
 
 // Start the server on the port
