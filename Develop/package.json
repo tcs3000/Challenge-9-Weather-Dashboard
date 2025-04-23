@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run client:build && npm run server",
@@ -13,7 +14,8 @@
     "client:build": "cd client && npm run build",
     "client:dev": "cd client && npm run dev",
     "build": "cd client && npm run build",
-    "render-build": "npm install && npm run build"
+    "render-build": "npm install && npm run build",
+    "dev": "node --loader ts-node/esm server/src/server.ts"
   },
   "keywords": [],
   "author": "",
